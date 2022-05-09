@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-29T11:08:09Z" name="Default suite" finished-at="2022-04-29T11:08:33Z" duration-ms="24026">
+    <groups>
+    </groups>
+    <test started-at="2022-04-29T11:08:09Z" name="Default test" finished-at="2022-04-29T11:08:33Z" duration-ms="24026">
+      <class name="com.Test.Demo1">
+        <test-method signature="setup()[pri:0, instance:com.Test.Demo1@4efcf8a]" started-at="2022-04-29T16:38:09Z" name="setup" finished-at="2022-04-29T16:38:17Z" duration-ms="8640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginFucntionaltiy()[pri:0, instance:com.Test.Demo1@4efcf8a]" started-at="2022-04-29T16:38:18Z" name="loginFucntionaltiy" finished-at="2022-04-29T16:38:23Z" duration-ms="5994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFucntionaltiy -->
+        <test-method signature="pimPage()[pri:0, instance:com.Test.Demo1@4efcf8a]" started-at="2022-04-29T16:38:23Z" name="pimPage" finished-at="2022-04-29T16:38:27Z" duration-ms="3303" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
+	at DataDriven.ExcelReader3.getData(ExcelReader3.java:32)
+	at com.Test.Demo1.pimPage(Demo1.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pimPage -->
+        <test-method signature="tearDown()[pri:0, instance:com.Test.Demo1@4efcf8a]" started-at="2022-04-29T16:38:27Z" name="tearDown" finished-at="2022-04-29T16:38:33Z" duration-ms="6036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.Demo1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
